@@ -55,7 +55,7 @@ public class CreateContactGroupTests extends WebTestBase {
     @ApiLogin
     @AddContactGroup(cleanUp = false)
     @Test
-    @DisplayName("Should delete created contact group")
+    @DisplayName("Should create new contact group with contacts")
     public void createNewContactGroupWithContactsTest(UUID contactGroupId) {
         open(config.newContactGroupPageUrl(contactGroupId));
 
