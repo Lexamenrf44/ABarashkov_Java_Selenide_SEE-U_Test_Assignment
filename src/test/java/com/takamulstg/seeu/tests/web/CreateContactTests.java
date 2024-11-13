@@ -179,7 +179,7 @@ public class CreateContactTests extends WebTestBase {
 
     @ApiLogin
     @Test
-    @DisplayName("Should create a new contact")
+    @DisplayName("Should create a new contact with compulsory fields only")
     public void manualContactCreationWithCompulsoryFieldsTest() {
 
         String randomFullName = RandomDataUtils.randomFullName();
@@ -205,7 +205,7 @@ public class CreateContactTests extends WebTestBase {
 
     @ApiLogin
     @Test
-    @DisplayName("Should create a new contact")
+    @DisplayName("Should create a new with additional fields contact")
     public void manualContactCreationWithAdditionalFieldsTest() {
 
         String randomFullName = RandomDataUtils.randomFullName();
